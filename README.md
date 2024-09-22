@@ -9,14 +9,17 @@
 
 ```mermaid
   graph TD
-    user[User] --> A1[Book Movie]
+    actor user
+    user --> A1[Book Movie]
     user --> A2[Cancel Movie]
     user --> A3[Book Events]
     user --> A4[Cancel Events]
-    
-    admin[Admin] --> A5[Update Information]
-    
-    A1 --> system[System]
+
+  actor admin
+    admin --> A5[Update Information]
+
+  actor system
+    A1 --> system
     A2 --> system
     A3 --> system
     A4 --> system

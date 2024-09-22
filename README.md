@@ -7,7 +7,7 @@
       C-->D;
 ```
 ```mermaid
-graph TD
+graph LR
     actor User
     actor Admin
 

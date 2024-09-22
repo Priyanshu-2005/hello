@@ -6,8 +6,16 @@
       B-->D;
       C-->D;
 ```
+```
+sequenceDiagram
+    actor Alice
+    actor Bob
+    Alice->>Bob: Hi Bob
+    Bob->>Alice: Hi Alice
+```
 
-```mermaid
+
+```sequenceDiagram
   graph TD
     actor user
     user --> A1[Book Movie]

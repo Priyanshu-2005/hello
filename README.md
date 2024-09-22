@@ -6,6 +6,7 @@
       B-->D;
       C-->D;
 ```
+```mermaid
 graph TD
     actor User
     actor Admin
@@ -28,4 +29,5 @@ graph TD
     Payment --> Credit[Credit]
     Payment --> Debit[Debit]
     Payment --> Netbanking[Netbanking]
+```
 

@@ -7,7 +7,7 @@
       C-->D;
 ```
 ```mermaid
-graph LR
+sequenceDiagram
     actor User
     actor Admin
 
@@ -30,4 +30,7 @@ graph LR
     Payment --> Debit[Debit]
     Payment --> Netbanking[Netbanking]
 ```
-
+```mermaid
+ sequenceDiagram
+     actor Actor
+ ```

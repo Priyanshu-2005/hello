@@ -6,15 +6,16 @@
       B-->D;
       C-->D;
 ```
-```mermaid
 graph TD
     actor User
-    User((User)) --> |Book Movie| BookMovie[Book Movie]
+    actor Admin
+
+    User --> |Book Movie| BookMovie[Book Movie]
     User --> |Cancel Movie| CancelMovie[Cancel Movie]
     User --> |Book Events| BookEvents[Book Events]
     User --> |Cancel Events| CancelEvents[Cancel Events]
-    actor Admin
-    Admin((Admin)) --> |Update Information| UpdateInfo[Update Information]
+
+    Admin --> |Update Information| UpdateInfo[Update Information]
 
     BookMovie --> System((System))
     CancelMovie --> System
@@ -27,4 +28,4 @@ graph TD
     Payment --> Credit[Credit]
     Payment --> Debit[Debit]
     Payment --> Netbanking[Netbanking]
-```
+

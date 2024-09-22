@@ -51,6 +51,7 @@ Admin -> (Update Information)
 (Payment) --> (Debit)
 (Payment) --> (Netbanking)
 @enduml
+```
 
 ```mermaid
 sequenceDiagram

@@ -10,25 +10,18 @@
 sequenceDiagram
     actor User
     actor Admin
+    participant System
+    participant Payment
 
-    User --> |Book Movie| BookMovie[Book Movie]
-    User --> |Cancel Movie| CancelMovie[Cancel Movie]
-    User --> |Book Events| BookEvents[Book Events]
-    User --> |Cancel Events| CancelEvents[Cancel Events]
-
-    Admin --> |Update Information| UpdateInfo[Update Information]
-
-    BookMovie --> System((System))
-    CancelMovie --> System
-    BookEvents --> System
-    CancelEvents --> System
-    UpdateInfo --> System
+    User ->> System: Book Movie
+    User ->> System: Cancel Movie
+    User ->> System: Book Events
+    User ->> System: Cancel Events
     
-    System --> Payment[Payment]
+    Admin ->> System: Update Information
     
-    Payment --> Credit[Credit]
-    Payment --> Debit[Debit]
-    Payment --> Netbanking[Netbanking]
+    System ->> Payment: Process Payment
+    Payment ->> User: Payment Options (Credit, Debit, Netbanking)
 ```
 ```mermaid
  sequenceDiagram

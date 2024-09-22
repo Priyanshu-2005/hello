@@ -8,11 +8,12 @@
 ```
 ```mermaid
 graph TD
+    actor User
     User((User)) --> |Book Movie| BookMovie[Book Movie]
     User --> |Cancel Movie| CancelMovie[Cancel Movie]
     User --> |Book Events| BookEvents[Book Events]
     User --> |Cancel Events| CancelEvents[Cancel Events]
-
+    actor Admin
     Admin((Admin)) --> |Update Information| UpdateInfo[Update Information]
 
     BookMovie --> System((System))

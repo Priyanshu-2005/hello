@@ -27,6 +27,7 @@ sequenceDiagram
  sequenceDiagram
      actor Actor
  ```
+```plantuml
 @startuml
 actor User
 actor Admin
@@ -50,3 +51,4 @@ Admin -> (Update Information)
 (Payment) --> (Debit)
 (Payment) --> (Netbanking)
 @enduml
+

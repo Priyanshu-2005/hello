@@ -6,8 +6,7 @@
       B-->D;
       C-->D;
 ```
-```
-sequenceDiagram
+```sequenceDiagram
     actor Alice
     actor Bob
     Alice->>Bob: Hi Bob
@@ -38,4 +37,27 @@ sequenceDiagram
     A6 --> B1[Credit]
     A6 --> B2[Debit]
     A6 --> B3[Netbanking]
+
+
+```
+
+```graph TD
+    User((User)) --> |Book Movie| BookMovie[Book Movie]
+    User --> |Cancel Movie| CancelMovie[Cancel Movie]
+    User --> |Book Events| BookEvents[Book Events]
+    User --> |Cancel Events| CancelEvents[Cancel Events]
+
+    Admin((Admin)) --> |Update Information| UpdateInfo[Update Information]
+
+    BookMovie --> System((System))
+    CancelMovie --> System
+    BookEvents --> System
+    CancelEvents --> System
+    UpdateInfo --> System
+    
+    System --> Payment[Payment]
+    
+    Payment --> Credit[Credit]
+    Payment --> Debit[Debit]
+    Payment --> Netbanking[Netbanking]
 ```

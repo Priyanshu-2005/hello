@@ -52,3 +52,24 @@ Admin -> (Update Information)
 (Payment) --> (Netbanking)
 @enduml
 
+```mermaid
+sequenceDiagram
+    participant user
+    participant system
+    participant admin
+
+    user->> system: book movie
+    system-->> user: confirmation
+    user->> system: cancel movie
+    system-->> user: confirmation
+    user->> system: book events
+    system-->> user: confirmation
+    user->> system: cancel events
+    system-->> user: confirmation
+    admin->> system: update information
+    system-->> admin: confirmation
+    system->> system: payment
+    system->> system: credit
+    system->> system: debit
+    system->> system: netbanking
+```

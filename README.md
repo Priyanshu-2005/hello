@@ -256,3 +256,8 @@ Example for \( N = 5, K = 7 \):
 6. \( i = 5 \): \( dp[5][0] = "", dp[5][3] = "abc", dp[5][7] = "abcabcd" \)
 
 
+![Idea_User_Diagram_final_darkkk drawio](https://github.com/user-attachments/assets/a7756791-e7e1-4c55-9de3-f2d22ff1e47e)
+
+
+![Idea_User_Diagram_final___darkkk drawio](https://github.com/user-attachments/assets/9207e29c-e605-4078-9075-9bcaff2abea4)
+
